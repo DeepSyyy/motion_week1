@@ -372,7 +372,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
-         Divider(
+        Divider(
           color: Colors.grey[200],
           thickness: 4,
         ),
