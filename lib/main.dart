@@ -67,336 +67,316 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.white,
         elevation: 0,
       ),
-      body: ListView(
-        padding: EdgeInsets.all(24),
-        children: [
-          Column(
-          children: [
-            Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[
-              Container(
-                height: 48,
-                width: 48,
-                decoration: BoxDecoration(
-                  color: Colors.transparent,
-                ),
-                child: Icon(
-                  Icons.arrow_back_sharp,
-                  color: Color(0xff1c6758),
-                  size: 30,
+      body: ListView(children: [
+        Container(
+          padding: EdgeInsets.all(24),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                    ),
+                    child: Icon(
+                      Icons.arrow_back_sharp,
+                      color: Color(0xff1c6758),
+                      size: 30,
+                    ),
                   ),
+                ],
               ),
-              
-                  
-            ],
-          ),
-          SizedBox(
-              height: 28,
-          ),
-          Row(
-              children: [
+              SizedBox(
+                height: 28,
+              ),
+              Row(children: [
                 Text(
                   "Tanggal Jatuh Tempo",
                   style: TextStyle(
-                  color: Colors.grey,
-                  fontWeight: FontWeight.w500,
-                  fontSize: 12,
-                  fontFamily: GoogleFonts.poppins().fontFamily,
-                  ),
-                  ),
-              ]
-            ),
-          SizedBox(
-            height: 4,
-          ),
-          Row(
-            children: [
-              Text("Sabtu, 08 Oktober 2022 22:41 WIB",
-              style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.w500,
-                fontSize: 12,
-                fontFamily: GoogleFonts.poppins().fontFamily,
-              ),
-              ),
-            ]
-          ),
-          SizedBox(
-            height: 29,
-          ),
-          Row(
-            children: [
-              Expanded(child:
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("BCA Virtual Account",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
-                    fontFamily: GoogleFonts.poppins().fontFamily,
-                  )
-                  ),
-                  Text("Transaksi Virtual Account",
-                  style: TextStyle(
                     color: Colors.grey,
                     fontWeight: FontWeight.w500,
                     fontSize: 12,
                     fontFamily: GoogleFonts.poppins().fontFamily,
-                  )
-                  )
-                ],
-              ),
-              ),
-              Container(
-                height: 48,
-                width: 48,
-                decoration: BoxDecoration(
-                  color: Colors.grey[200],
+                  ),
                 ),
+              ]),
+              SizedBox(
+                height: 4,
               ),
-            
-          ]
-        ),
-        SizedBox(
-          height: 26,
-        ),
-        Row(
-          children: [
-            Expanded(
-              child:Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("Nomor Virtual Account",
+              Row(children: [
+                Text(
+                  "Sabtu, 08 Oktober 2022 22:41 WIB",
                   style: TextStyle(
-                    color: Colors.grey,
+                    color: Colors.black,
                     fontWeight: FontWeight.w500,
                     fontSize: 12,
                     fontFamily: GoogleFonts.poppins().fontFamily,
-                  )
                   ),
-                  Text("0918320930817437482",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
-                    fontFamily: GoogleFonts.poppins().fontFamily,
-                  )
+                ),
+              ]),
+              SizedBox(
+                height: 29,
+              ),
+              Row(children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("BCA Virtual Account",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16,
+                            fontFamily: GoogleFonts.poppins().fontFamily,
+                          )),
+                      Text("Transaksi Virtual Account",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 12,
+                            fontFamily: GoogleFonts.poppins().fontFamily,
+                          ))
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 48,
+                  width: 48,
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                  ),
+                ),
+              ]),
+              SizedBox(
+                height: 26,
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Nomor Virtual Account",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 12,
+                              fontFamily: GoogleFonts.poppins().fontFamily,
+                            )),
+                        Text("0918320930817437482",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16,
+                              fontFamily: GoogleFonts.poppins().fontFamily,
+                            ))
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Total Tagihan",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16,
+                              fontFamily: GoogleFonts.poppins().fontFamily,
+                            )),
+                        Text("Rp1.772.500",
+                            style: TextStyle(
+                              color: Color(0xffff6767),
+                              fontWeight: FontWeight.w600,
+                              fontSize: 20,
+                              fontFamily: GoogleFonts.poppins().fontFamily,
+                            ))
+                      ],
+                    ),
                   )
                 ],
-              ) 
-              ,),
-              Container(
-                height: 48,
-                width: 48,
-                decoration: BoxDecoration(
-                  color: Colors.grey[200],
-                ),
               ),
-          ],
-        ),
-        SizedBox(
-          height: 25,
-        ),
-        Row(
-          children: [
-            Expanded(
-              child:Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("Total Tagihan",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
-                    fontFamily: GoogleFonts.poppins().fontFamily,
-                  )
+              SizedBox(
+                height: 24,
+              ),
+              Row(children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Detail belanja",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16,
+                            fontFamily: GoogleFonts.poppins().fontFamily,
+                          )),
+                    ],
                   ),
+                )
+              ]),
+              SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: [
+                  Text("Total Harga Barang",
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 12,
+                        fontFamily: GoogleFonts.poppins().fontFamily,
+                      )),
+                  Spacer(),
                   Text("Rp1.772.500",
-                  style: TextStyle(
-                    color: Color(0xffff6767),
-                    fontWeight: FontWeight.w600,
-                    fontSize: 20,
-                    fontFamily: GoogleFonts.poppins().fontFamily,
-                  )
-                  )
-                ],
-              ) 
-              ,)
-          ],
-        ),
-        SizedBox(
-          height: 24,
-        ),
-        Row(
-          children: [
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("Detail belanja",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
-                    fontFamily: GoogleFonts.poppins().fontFamily,
-                  )
-                  ),
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 12,
+                        fontFamily: GoogleFonts.poppins().fontFamily,
+                      )),
                 ],
               ),
-            )
-          ]
-        ),
-        SizedBox(
-          height: 5,
-        ),
-        Row(
-          children: [
-            Text("Total Harga Barang",
-            style: TextStyle(
-              color: Colors.grey,
-              fontWeight: FontWeight.w500,
-              fontSize: 12,
-              fontFamily: GoogleFonts.poppins().fontFamily,
-            )
-            ),
-            Spacer(),
-            Text("Rp1.772.500",
-            style: TextStyle(
-              color: Colors.grey,
-              fontWeight: FontWeight.w500,
-              fontSize: 12,
-              fontFamily: GoogleFonts.poppins().fontFamily,
-            )
-            ),
-          ],
-        ),
-        SizedBox(
-          height: 5,
-        ),
-        Row(
-          children: [
-            Text("Total Ongkos Kirim",
-            style: TextStyle(
-              color: Colors.grey,
-              fontWeight: FontWeight.w500,
-              fontSize: 12,
-              fontFamily: GoogleFonts.poppins().fontFamily,
-            )
-            ),
-            Spacer(),
-            Text("Rp12.000",
-            style: TextStyle(
-              color: Colors.grey,
-              fontWeight: FontWeight.w500,
-              fontSize: 12,
-              fontFamily: GoogleFonts.poppins().fontFamily,
-            )
-            ),
-          ],
-        ),
-        SizedBox(
-          height: 5,
-        ),
-        Row(
-          children: [
-            Text("Asuransi",
-            style: TextStyle(
-              color: Colors.grey,
-              fontWeight: FontWeight.w500,
-              fontSize: 12,
-              fontFamily: GoogleFonts.poppins().fontFamily,
-            )
-            ),
-            Spacer(),
-            Text("Rp1.000",
-            style: TextStyle(
-              color: Colors.grey,
-              fontWeight: FontWeight.w500,
-              fontSize: 12,
-              fontFamily: GoogleFonts.poppins().fontFamily,
-            )
-            ),
-          ],
-        ),
-        SizedBox(
-          height: 48,
-        ),
-        Column(
-          children: [
-            Text("Pesanan akan dikonfirmasi oleh penjual apabila proses pembayaran telah berhasil.",
-            style:
-            TextStyle(
-              color: Colors.grey,
-              fontWeight: FontWeight.w500,
-              fontSize: 12,
-              fontFamily: GoogleFonts.poppins().fontFamily,
-            )
-            ),
-          ],
-        ),
-        SizedBox(
-          height:12 ,
-        ),
-        SizedBox(
-          width: double.infinity,
-          child: ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            
-            primary: Color(0xff1c6758),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(5),
-            ),
-            padding: EdgeInsets.symmetric(vertical: 12),
+              SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: [
+                  Text("Total Ongkos Kirim",
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 12,
+                        fontFamily: GoogleFonts.poppins().fontFamily,
+                      )),
+                  Spacer(),
+                  Text("Rp12.000",
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 12,
+                        fontFamily: GoogleFonts.poppins().fontFamily,
+                      )),
+                ],
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: [
+                  Text("Asuransi",
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 12,
+                        fontFamily: GoogleFonts.poppins().fontFamily,
+                      )),
+                  Spacer(),
+                  Text("Rp1.000",
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 12,
+                        fontFamily: GoogleFonts.poppins().fontFamily,
+                      )),
+                ],
+              ),
+            ],
           ),
-          onPressed:(){}, 
-          child: Text("Halaman Utama",
-          style: TextStyle(
-            color: Color(0xfff5f5f5),
-            fontWeight: FontWeight.w600,
-            fontSize: 16,
-            fontFamily: GoogleFonts.poppins().fontFamily,
-          )
+        ),
+        Divider(
+          color: Colors.grey[200],
+          thickness: 4,
+        ),
+        Container(
+          padding: EdgeInsets.all(24),
+          child: Column(
+            children: [
+              Text(
+                  "Pesanan akan dikonfirmasi oleh penjual apabila proses pembayaran telah berhasil.",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 12,
+                    fontFamily: GoogleFonts.poppins().fontFamily,
+                  )),
+              SizedBox(
+                height: 12,
+              ),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Color(0xff1c6758),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                  ),
+                  onPressed: () {},
+                  child: Text("Halaman Utama",
+                      style: TextStyle(
+                        color: Color(0xfff5f5f5),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 16,
+                        fontFamily: GoogleFonts.poppins().fontFamily,
+                      )),
+                ),
+              ),
+              SizedBox(
+                height: 12,
+              ),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Color(0xfff5f5f5),
+                    shadowColor: Colors.transparent,
+                    elevation: 0,
+                    side: BorderSide(
+                      color: Color(0xff1c6758),
+                      width: 1,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                  ),
+                  onPressed: () {},
+                  child: Text("Cek Status Pembayaran",
+                      style: TextStyle(
+                        color: Color(0xff1c6758),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 16,
+                        fontFamily: GoogleFonts.poppins().fontFamily,
+                      )),
+                ),
+              ),
+            ],
           ),
-      ),
-      ),
-      SizedBox(
-        height: 12,
-      ),
-      SizedBox(
-          width: double.infinity,
-          child: ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            
-            primary: Color(0xfff5f5f5),
-            shadowColor: Colors.transparent,
-            elevation: 0,
-            side: BorderSide(
-              color: Color(0xff1c6758),
-              width: 1,
-            ),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(5),
-            ),
-            padding: EdgeInsets.symmetric(vertical: 12),
-          ),
-          onPressed:(){}, 
-          child: Text("Cek Status Pembayaran",
-          style: TextStyle(
-            color: Color(0xff1c6758),
-            fontWeight: FontWeight.w600,
-            fontSize: 16,
-            fontFamily: GoogleFonts.poppins().fontFamily,
-          )
-          ),
-      ),
-      ),
-    ]
-    ),
-  ]
-  ), // This trailing comma makes auto-formatting nicer for build methods.
-  );
+        ),
+         Divider(
+          color: Colors.grey[200],
+          thickness: 4,
+        ),
+      ]), // This trailing comma makes auto-formatting nicer for build methods.
+    );
   }
 }
